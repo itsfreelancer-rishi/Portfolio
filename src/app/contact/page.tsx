@@ -1,5 +1,5 @@
 "use client";
-
+s
 import Link from "next/link";
 import { Mail, MessageSquare, Instagram, Linkedin } from "lucide-react";
 import { Metadata } from "next";
