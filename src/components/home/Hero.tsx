@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { GridBackground } from "@/components/ui/GridBackground";
 
 export function Hero() {
     return (
         <section className="relative flex min-h-[80vh] items-center justify-center overflow-hidden px-6 pt-20 pb-16 md:pt-32">
-            <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/5 to-transparent opacity-50"></div>
+            <GridBackground />
 
             <div className="mx-auto max-w-4xl text-center">
                 <h1 className="font-heading text-4xl font-bold tracking-tight text-foreground sm:text-6xl md:text-7xl">
