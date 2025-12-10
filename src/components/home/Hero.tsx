@@ -8,12 +8,12 @@ export function Hero() {
 
             <div className="mx-auto max-w-4xl text-center">
                 <h1 className="font-heading text-4xl font-bold tracking-tight text-foreground sm:text-6xl md:text-7xl">
-                    I design high-converting <br className="hidden md:block" />
-                    <span className="text-muted-foreground">portfolio websites</span>
+                    Stop Underselling <br className="hidden md:block" />
+                    <span className="text-muted-foreground">Your Expertise.</span>
                 </h1>
 
                 <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-                    For US & UK service professionals who want to filter out low-budget leads and close $5k+ deals.
+                    I design high-converting portfolio websites for US & UK service professionals who want to filter out low-budget leads and close $5k+ deals.
                 </p>
 
                 <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
