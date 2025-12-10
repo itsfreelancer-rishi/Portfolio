@@ -16,12 +16,50 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Rishi Ramandwal - Premium Design Portfolio",
-  description: "High-converting portfolio websites for service professionals.",
+  metadataBase: new URL('https://www.rishifreelancer.me'),
+  title: {
+    default: "Rishi Ramandwal - Premium Web Design Portfolio",
+    template: "%s | Rishi Ramandwal"
+  },
+  description: "Freelance web developer specializing in high-converting portfolio websites for US & UK service professionals. Transform your online presence and attract premium clients.",
+  keywords: ["freelance web developer", "portfolio website design", "high-converting websites", "web design for photographers", "web design for lawyers", "premium web development", "Rishi Ramandwal"],
+  authors: [{ name: "Rishi Ramandwal" }],
+  creator: "Rishi Ramandwal",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://www.rishifreelancer.me",
+    title: "Rishi Ramandwal - Premium Web Design Portfolio",
+    description: "Freelance web developer specializing in high-converting portfolio websites for service professionals.",
+    siteName: "Rishi Ramandwal Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rishi Ramandwal - Premium Web Design Portfolio",
+    description: "Freelance web developer specializing in high-converting portfolio websites.",
+    creator: "@itsfreelancer.rishi",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'your-google-verification-code', // Add your Google Search Console verification code
+  },
 };
 
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { organizationSchema, websiteSchema } from "@/lib/schema";
+
+// ... (rest of imports)
 
 export default function RootLayout({
   children,
@@ -30,6 +68,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+      </head>
       <body
         className={cn(
           inter.variable,
