@@ -3,7 +3,7 @@ import { Check } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Services & Pricing | Sumit",
+    title: "Services & Pricing | Rishi",
     description: "Transparent pricing for high-ticket portfolio websites. Packages start at $550.",
 };
 

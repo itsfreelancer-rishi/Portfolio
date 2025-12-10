@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "About Me | Sumit",
+    title: "About Me | Rishi",
     description: "I build websites that pay for themselves. Learn about my strategy-first design process.",
 };
 
@@ -15,15 +15,19 @@ export default function AboutPage() {
                     {/* Image/Visual Side */}
                     <div className="relative">
                         <div className="aspect-[4/5] rounded-3xl overflow-hidden bg-white/5 border border-white/10 relative">
-                            {/* Placeholder for Profile Pic */}
-                            <div className="absolute inset-0 flex items-center justify-center text-white/20 font-heading text-4xl font-bold">
-                                SUMIT
-                            </div>
+                            {/* Profile Image */}
+                            <Image
+                                src="/profile.png"
+                                alt="Rishi Ramandwal"
+                                fill
+                                className="object-cover"
+                                priority
+                            />
                             {/* Overlay gradient */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
                             <div className="absolute bottom-6 left-6 right-6">
                                 <div className="text-white font-bold text-lg">Rishi Ramandwal</div>
-                                <div className="text-white/60 text-sm">Freelance Web Designer</div>
+                                <div className="text-white/60 text-sm">Freelance Web Developer</div>
                             </div>
                         </div>
                     </div>
