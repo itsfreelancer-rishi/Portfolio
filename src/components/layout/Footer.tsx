@@ -11,9 +11,6 @@ export function Footer() {
                     <Link href="https://www.instagram.com/itsfreelancer.rishi" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-white transition-colors">
                         Instagram
                     </Link>
-                    <Link href="https://my-website-delta-inky.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-white transition-colors">
-                        Photography
-                    </Link>
                     <Link href="mailto:itsfreelancer.rishi@gmail.com" className="text-sm text-muted-foreground hover:text-white transition-colors">
                         Email
                     </Link>

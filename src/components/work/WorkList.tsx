@@ -46,6 +46,34 @@ export function WorkList() {
                     </p>
                 </div>
 
+                {/* Photography Portfolio Link */}
+                <div className="mb-16 max-w-4xl mx-auto">
+                    <Link
+                        href="https://my-website-delta-inky.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group block p-8 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all"
+                    >
+                        <div className="flex items-center justify-between gap-6">
+                            <div>
+                                <h3 className="text-2xl font-bold font-heading mb-2 group-hover:text-indigo-400 transition-colors">
+                                    My Photography Portfolio
+                                </h3>
+                                <p className="text-muted-foreground">
+                                    Explore my creative photography work showcasing visual storytelling and artistic vision.
+                                </p>
+                            </div>
+                            <ArrowUpRight className="h-8 w-8 text-muted-foreground group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-all flex-shrink-0" />
+                        </div>
+                    </Link>
+                </div>
+
+                <div className="border-t border-white/10 pt-16 mb-12">
+                    <h3 className="text-2xl font-bold font-heading text-center mb-12">
+                        Client Projects
+                    </h3>
+                </div>
+
                 <div className="flex flex-col gap-24">
                     {projects.map((project, index) => (
                         <motion.div
