@@ -39,7 +39,7 @@ export default function AboutPage() {
                                 Most designers focus on making things "pretty". I focus on making things "profitable".
                             </p>
                             <p>
-                                With a background in [Your Background, e.g., Marketing/Design], I understand that a website is an investment, not an expense. It needs to capture leads, build trust, and sell your services while you sleep.
+                                With a background in Conversion-Focused Design, I understand that a website is an investment, not an expense. It needs to capture leads, build trust, and sell your services while you sleep.
                             </p>
                             <p>
                                 My process is simple and transparent. No jargon, no ghosting, just high-quality work delivered on time.
