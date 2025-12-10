@@ -8,6 +8,16 @@ import { ArrowUpRight } from "lucide-react";
 // In a real app, this would be fetched from a CMS or a data file
 const projects = [
     {
+        title: "Atelier Photography",
+        category: "Wedding Photography Portfolio",
+        image: "/images/photography-portfolio.png",
+        slug: "atelier-photography",
+        description: "My personal photography portfolio showcasing timeless elegance in fine-art wedding photography.",
+        year: "2024",
+        isExternal: true,
+        externalUrl: "https://my-website-delta-inky.vercel.app/"
+    },
+    {
         title: "Lumina Photography",
         category: "Wedding Photography",
         image: "/images/photographer.png",
@@ -46,34 +56,6 @@ export function WorkList() {
                     </p>
                 </div>
 
-                {/* Photography Portfolio Link */}
-                <div className="mb-16 max-w-4xl mx-auto">
-                    <Link
-                        href="https://my-website-delta-inky.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group block p-8 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all"
-                    >
-                        <div className="flex items-center justify-between gap-6">
-                            <div>
-                                <h3 className="text-2xl font-bold font-heading mb-2 group-hover:text-indigo-400 transition-colors">
-                                    My Photography Portfolio
-                                </h3>
-                                <p className="text-muted-foreground">
-                                    Explore my creative photography work showcasing visual storytelling and artistic vision.
-                                </p>
-                            </div>
-                            <ArrowUpRight className="h-8 w-8 text-muted-foreground group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-all flex-shrink-0" />
-                        </div>
-                    </Link>
-                </div>
-
-                <div className="border-t border-white/10 pt-16 mb-12">
-                    <h3 className="text-2xl font-bold font-heading text-center mb-12">
-                        Client Projects
-                    </h3>
-                </div>
-
                 <div className="flex flex-col gap-24">
                     {projects.map((project, index) => (
                         <motion.div
@@ -86,7 +68,12 @@ export function WorkList() {
                         >
                             {/* Image Side */}
                             <div className="w-full lg:w-3/5">
-                                <Link href={`/work/${project.slug}`} className="group block relative w-full aspect-[16/10] overflow-hidden rounded-2xl bg-muted">
+                                <Link
+                                    href={project.isExternal ? project.externalUrl! : `/work/${project.slug}`}
+                                    target={project.isExternal ? "_blank" : undefined}
+                                    rel={project.isExternal ? "noopener noreferrer" : undefined}
+                                    className="group block relative w-full aspect-[16/10] overflow-hidden rounded-2xl bg-muted"
+                                >
                                     <Image
                                         src={project.image}
                                         alt={project.title}
@@ -105,12 +92,19 @@ export function WorkList() {
                                     {project.description}
                                 </p>
                                 <div className="flex flex-col gap-4">
-                                    <div>
-                                        <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-2">Strategy</h4>
-                                        <p className="text-sm text-muted-foreground">Focus on user journey and trust building signals.</p>
-                                    </div>
-                                    <Link href={`/work/${project.slug}`} className="inline-flex items-center text-white font-medium hover:underline underline-offset-4 mt-4">
-                                        View Case Study <ArrowUpRight className="ml-2 h-4 w-4" />
+                                    {!project.isExternal && (
+                                        <div>
+                                            <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-2">Strategy</h4>
+                                            <p className="text-sm text-muted-foreground">Focus on user journey and trust building signals.</p>
+                                        </div>
+                                    )}
+                                    <Link
+                                        href={project.isExternal ? project.externalUrl! : `/work/${project.slug}`}
+                                        target={project.isExternal ? "_blank" : undefined}
+                                        rel={project.isExternal ? "noopener noreferrer" : undefined}
+                                        className="inline-flex items-center text-white font-medium hover:underline underline-offset-4 mt-4"
+                                    >
+                                        {project.isExternal ? "Visit Portfolio" : "View Case Study"} <ArrowUpRight className="ml-2 h-4 w-4" />
                                     </Link>
                                 </div>
                             </div>
