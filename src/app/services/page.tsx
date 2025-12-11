@@ -134,48 +134,90 @@ export default function ServicesPage() {
                         Select the package that best fits your needs and budget. All packages include professional design and development.
                     </p>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                        {/* Starter Package */}
-                        <div className="p-8 rounded-3xl ring-1 ring-white/10 bg-white/5">
-                            <h3 className="text-2xl font-bold mb-2">Starter</h3>
-                            <p className="text-muted-foreground mb-6">Perfect for getting online quickly</p>
-                            <div className="mb-6">
-                                <span className="text-4xl font-bold">$800</span>
-                                <span className="text-muted-foreground ml-2">USD</span>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+                        {/* Template Package */}
+                        <div className="p-6 rounded-3xl ring-1 ring-white/10 bg-white/5">
+                            <h3 className="text-xl font-bold mb-2">Template</h3>
+                            <p className="text-muted-foreground text-sm mb-4">Budget-friendly option</p>
+                            <div className="mb-4">
+                                <span className="text-3xl font-bold">$500</span>
+                                <span className="text-muted-foreground ml-2 text-sm">USD</span>
                             </div>
-                            <ul className="space-y-3 mb-8">
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
-                                    <span>Semi-Custom Design</span>
+                            <ul className="space-y-2 mb-6">
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
+                                    <span>Template-Based Design</span>
                                 </li>
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
-                                    <span>Up to 5 Pages</span>
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
+                                    <span>Up to 3 Pages</span>
                                 </li>
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
                                     <span>Mobile Responsive</span>
                                 </li>
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
-                                    <span>Basic SEO Setup</span>
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
+                                    <span>Basic SEO</span>
                                 </li>
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
                                     <span>Contact Form</span>
                                 </li>
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
+                                    <span>1-Week Delivery</span>
+                                </li>
+                            </ul>
+                            <Link
+                                href="/contact"
+                                className="block w-full rounded-full bg-white/10 px-3 py-2 text-center text-xs font-semibold text-white hover:bg-white/20 transition-all"
+                            >
+                                Get Started
+                            </Link>
+                        </div>
+
+                        {/* Starter Package */}
+                        <div className="p-6 rounded-3xl ring-1 ring-white/10 bg-white/5">
+                            <h3 className="text-xl font-bold mb-2">Starter</h3>
+                            <p className="text-muted-foreground text-sm mb-4">Semi-custom design</p>
+                            <div className="mb-4">
+                                <span className="text-3xl font-bold">$800</span>
+                                <span className="text-muted-foreground ml-2 text-sm">USD</span>
+                            </div>
+                            <ul className="space-y-2 mb-6">
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
+                                    <span>Semi-Custom Design</span>
+                                </li>
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
+                                    <span>Up to 5 Pages</span>
+                                </li>
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
+                                    <span>Mobile Responsive</span>
+                                </li>
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
+                                    <span>Basic SEO Setup</span>
+                                </li>
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
+                                    <span>Contact Form</span>
+                                </li>
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
                                     <span>1 Round of Revisions</span>
                                 </li>
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
                                     <span>2-Week Delivery</span>
                                 </li>
                             </ul>
                             <Link
                                 href="/contact"
-                                className="block w-full rounded-full bg-white/10 px-4 py-3 text-center text-sm font-semibold text-white hover:bg-white/20 transition-all"
+                                className="block w-full rounded-full bg-white/10 px-3 py-2 text-center text-xs font-semibold text-white hover:bg-white/20 transition-all"
                             >
                                 Get Started
                             </Link>
