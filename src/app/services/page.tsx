@@ -127,52 +127,175 @@ export default function ServicesPage() {
                     </div>
                 </div>
 
-                {/* Pricing Package */}
-                <div className="mx-auto max-w-2xl rounded-3xl ring-1 ring-white/10 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none mb-20">
-                    <div className="p-8 sm:p-10 lg:flex-auto">
-                        <h3 className="text-2xl font-bold tracking-tight text-foreground font-heading">The Premium Portfolio Package</h3>
-                        <p className="mt-6 text-base leading-7 text-muted-foreground">
-                            Everything you need to showcase your work and convert visitors into high-paying clients. Designed specifically for photographers, consultants, lawyers, and creative professionals who want to stand out from the competition.
-                        </p>
-                        <p className="mt-4 text-base leading-7 text-muted-foreground">
-                            This isn't a template-based solution. Every website I build is custom-designed to reflect your brand, speak to your ideal clients, and drive conversions. You're not just getting a website—you're getting a strategic marketing asset.
-                        </p>
-                        <div className="mt-10 flex items-center gap-x-4">
-                            <h4 className="flex-none text-sm font-semibold leading-6 text-indigo-400">What's included</h4>
-                            <div className="h-px flex-auto bg-white/10" />
-                        </div>
-                        <ul role="list" className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-muted-foreground sm:grid-cols-2 sm:gap-6">
-                            {benefits.map((benefit) => (
-                                <li key={benefit} className="flex gap-x-3">
-                                    <Check className="h-6 w-5 flex-none text-indigo-400" aria-hidden="true" />
-                                    {benefit}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
-                        <div className="rounded-2xl bg-white/5 py-10 text-center ring-1 ring-inset ring-white/10 lg:flex lg:flex-col lg:justify-center lg:py-16">
-                            <div className="mx-auto max-w-xs px-8">
-                                <p className="text-base font-semibold text-muted-foreground">Starting Investment</p>
-                                <p className="mt-6 flex items-baseline justify-center gap-x-2">
-                                    <span className="text-5xl font-bold tracking-tight text-foreground">$550</span>
-                                    <span className="text-sm font-semibold leading-6 tracking-wide text-muted-foreground">USD</span>
-                                </p>
-                                <p className="mt-4 text-sm text-muted-foreground">
-                                    Final price depends on project scope
-                                </p>
-                                <Link
-                                    href="/contact"
-                                    className="mt-10 block w-full rounded-full bg-white px-3 py-3 text-center text-sm font-semibold text-black shadow-sm hover:bg-white/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all hover:scale-105"
-                                >
-                                    Get Your Free Quote
-                                </Link>
-                                <p className="mt-6 text-xs leading-5 text-muted-foreground">
-                                    50% deposit required to start. Balance due before launch.
-                                </p>
+                {/* Pricing Packages */}
+                <div className="mb-20">
+                    <h2 className="text-3xl font-bold text-center mb-4 font-heading">Choose Your Package</h2>
+                    <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+                        Select the package that best fits your needs and budget. All packages include professional design and development.
+                    </p>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                        {/* Starter Package */}
+                        <div className="p-8 rounded-3xl ring-1 ring-white/10 bg-white/5">
+                            <h3 className="text-2xl font-bold mb-2">Starter</h3>
+                            <p className="text-muted-foreground mb-6">Perfect for getting online quickly</p>
+                            <div className="mb-6">
+                                <span className="text-4xl font-bold">$800</span>
+                                <span className="text-muted-foreground ml-2">USD</span>
                             </div>
+                            <ul className="space-y-3 mb-8">
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span>Semi-Custom Design</span>
+                                </li>
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span>Up to 5 Pages</span>
+                                </li>
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span>Mobile Responsive</span>
+                                </li>
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span>Basic SEO Setup</span>
+                                </li>
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span>Contact Form</span>
+                                </li>
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span>1 Round of Revisions</span>
+                                </li>
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span>2-Week Delivery</span>
+                                </li>
+                            </ul>
+                            <Link
+                                href="/contact"
+                                className="block w-full rounded-full bg-white/10 px-4 py-3 text-center text-sm font-semibold text-white hover:bg-white/20 transition-all"
+                            >
+                                Get Started
+                            </Link>
+                        </div>
+
+                        {/* Professional Package (Recommended) */}
+                        <div className="p-8 rounded-3xl ring-2 ring-indigo-500 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 relative">
+                            <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-indigo-500 text-black text-sm font-semibold">
+                                Most Popular
+                            </div>
+                            <h3 className="text-2xl font-bold mb-2">Professional</h3>
+                            <p className="text-muted-foreground mb-6">Best value for serious businesses</p>
+                            <div className="mb-6">
+                                <span className="text-4xl font-bold">$1,800</span>
+                                <span className="text-muted-foreground ml-2">USD</span>
+                            </div>
+                            <ul className="space-y-3 mb-8">
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span className="font-semibold">Fully Custom Design</span>
+                                </li>
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span>Up to 10 Pages</span>
+                                </li>
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span>Mobile Responsive & Fast</span>
+                                </li>
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span>Advanced SEO Optimization</span>
+                                </li>
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span>Contact Form + Integrations</span>
+                                </li>
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span>2 Rounds of Revisions</span>
+                                </li>
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span>Google Analytics Setup</span>
+                                </li>
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span>30-Day Post-Launch Support</span>
+                                </li>
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span>3-Week Delivery</span>
+                                </li>
+                            </ul>
+                            <Link
+                                href="/contact"
+                                className="block w-full rounded-full bg-white px-4 py-3 text-center text-sm font-semibold text-black hover:bg-white/90 transition-all hover:scale-105"
+                            >
+                                Get Started
+                            </Link>
+                        </div>
+
+                        {/* Premium Package */}
+                        <div className="p-8 rounded-3xl ring-1 ring-white/10 bg-white/5">
+                            <h3 className="text-2xl font-bold mb-2">Premium</h3>
+                            <p className="text-muted-foreground mb-6">For high-end requirements</p>
+                            <div className="mb-6">
+                                <span className="text-4xl font-bold">$3,500+</span>
+                                <span className="text-muted-foreground ml-2">USD</span>
+                            </div>
+                            <ul className="space-y-3 mb-8">
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span className="font-semibold">Bespoke Custom Design</span>
+                                </li>
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span>Unlimited Pages</span>
+                                </li>
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span>Advanced Features & Animations</span>
+                                </li>
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span>Comprehensive SEO Strategy</span>
+                                </li>
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span>Custom Integrations (CRM, etc.)</span>
+                                </li>
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span>Unlimited Revisions</span>
+                                </li>
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span>Priority Support</span>
+                                </li>
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span>60-Day Post-Launch Support</span>
+                                </li>
+                                <li className="flex gap-3 text-sm">
+                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                    <span>4-6 Week Delivery</span>
+                                </li>
+                            </ul>
+                            <Link
+                                href="/contact"
+                                className="block w-full rounded-full bg-white/10 px-4 py-3 text-center text-sm font-semibold text-white hover:bg-white/20 transition-all"
+                            >
+                                Get Started
+                            </Link>
                         </div>
                     </div>
+
+                    <p className="text-center text-sm text-muted-foreground mt-8">
+                        All packages require 50% deposit to start. Final pricing may vary based on specific requirements.
+                    </p>
                 </div>
 
                 {/* Process Section */}
