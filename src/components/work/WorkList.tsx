@@ -18,28 +18,34 @@ const projects = [
         externalUrl: "https://my-website-delta-inky.vercel.app/"
     },
     {
-        title: "Lumina Photography",
+        title: "MÉMOIRE WEDDINGS",
         category: "Wedding Photography",
         image: "/images/photographer.png",
-        slug: "lumina-photography",
+        slug: "memoire-weddings",
         description: "Minimizing bounce rate for high-end wedding inquiries.",
         year: "2024",
+        isExternal: true,
+        externalUrl: "https://wedding-photo-omega.vercel.app/"
     },
     {
-        title: "Barrett & Associates",
+        title: "LIVINGSTON & PARTNERS",
         category: "Legal Firm",
         image: "/images/lawyer.png",
-        slug: "barrett-legal",
+        slug: "livingston-partners",
         description: "Building authority and trust for corporate clients.",
         year: "2024",
+        isExternal: true,
+        externalUrl: "https://lawyer-gray.vercel.app/"
     },
     {
-        title: "FreshSpaces",
+        title: "Cleaning Service",
         category: "Cleaning Service",
         image: "/images/cleaning.png",
-        slug: "fresh-spaces",
+        slug: "cleaning-service",
         description: "Simplifying booking flow to increase conversion by 40%.",
         year: "2023",
+        isExternal: true,
+        externalUrl: "https://cleaning-lovat-tau.vercel.app/"
     },
 ];
 
