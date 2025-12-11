@@ -182,111 +182,111 @@ export default function ServicesPage() {
                         </div>
 
                         {/* Professional Package (Recommended) */}
-                        <div className="p-8 rounded-3xl ring-2 ring-indigo-500 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 relative">
-                            <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-indigo-500 text-black text-sm font-semibold">
-                                Most Popular
+                        <div className="p-6 rounded-3xl ring-2 ring-indigo-500 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 relative">
+                            <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-indigo-500 text-black text-xs font-semibold">
+                                Popular
                             </div>
-                            <h3 className="text-2xl font-bold mb-2">Professional</h3>
-                            <p className="text-muted-foreground mb-6">Best value for serious businesses</p>
-                            <div className="mb-6">
-                                <span className="text-4xl font-bold">$1,800</span>
-                                <span className="text-muted-foreground ml-2">USD</span>
+                            <h3 className="text-xl font-bold mb-2">Professional</h3>
+                            <p className="text-muted-foreground text-sm mb-4">Fully custom solution</p>
+                            <div className="mb-4">
+                                <span className="text-3xl font-bold">$1,800</span>
+                                <span className="text-muted-foreground ml-2 text-sm">USD</span>
                             </div>
-                            <ul className="space-y-3 mb-8">
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                            <ul className="space-y-2 mb-6">
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
                                     <span className="font-semibold">Fully Custom Design</span>
                                 </li>
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
                                     <span>Up to 10 Pages</span>
                                 </li>
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
-                                    <span>Mobile Responsive & Fast</span>
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
+                                    <span>Mobile & Fast</span>
                                 </li>
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
-                                    <span>Advanced SEO Optimization</span>
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
+                                    <span>Advanced SEO</span>
                                 </li>
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
-                                    <span>Contact Form + Integrations</span>
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
+                                    <span>Form + Integrations</span>
                                 </li>
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
-                                    <span>2 Rounds of Revisions</span>
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
+                                    <span>2 Revision Rounds</span>
                                 </li>
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
-                                    <span>Google Analytics Setup</span>
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
+                                    <span>Analytics Setup</span>
                                 </li>
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
-                                    <span>30-Day Post-Launch Support</span>
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
+                                    <span>30-Day Support</span>
                                 </li>
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
                                     <span>3-Week Delivery</span>
                                 </li>
                             </ul>
                             <Link
                                 href="/contact"
-                                className="block w-full rounded-full bg-white px-4 py-3 text-center text-sm font-semibold text-black hover:bg-white/90 transition-all hover:scale-105"
+                                className="block w-full rounded-full bg-white px-3 py-2 text-center text-xs font-semibold text-black hover:bg-white/90 transition-all hover:scale-105"
                             >
                                 Get Started
                             </Link>
                         </div>
 
                         {/* Premium Package */}
-                        <div className="p-8 rounded-3xl ring-1 ring-white/10 bg-white/5">
-                            <h3 className="text-2xl font-bold mb-2">Premium</h3>
-                            <p className="text-muted-foreground mb-6">For high-end requirements</p>
-                            <div className="mb-6">
-                                <span className="text-4xl font-bold">$3,500+</span>
-                                <span className="text-muted-foreground ml-2">USD</span>
+                        <div className="p-6 rounded-3xl ring-1 ring-white/10 bg-white/5">
+                            <h3 className="text-xl font-bold mb-2">Premium</h3>
+                            <p className="text-muted-foreground text-sm mb-4">High-end solution</p>
+                            <div className="mb-4">
+                                <span className="text-3xl font-bold">$3,500+</span>
+                                <span className="text-muted-foreground ml-2 text-sm">USD</span>
                             </div>
-                            <ul className="space-y-3 mb-8">
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
-                                    <span className="font-semibold">Bespoke Custom Design</span>
+                            <ul className="space-y-2 mb-6">
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
+                                    <span className="font-semibold">Bespoke Design</span>
                                 </li>
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
                                     <span>Unlimited Pages</span>
                                 </li>
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
-                                    <span>Advanced Features & Animations</span>
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
+                                    <span>Advanced Features</span>
                                 </li>
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
-                                    <span>Comprehensive SEO Strategy</span>
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
+                                    <span>SEO Strategy</span>
                                 </li>
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
-                                    <span>Custom Integrations (CRM, etc.)</span>
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
+                                    <span>Custom Integrations</span>
                                 </li>
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
                                     <span>Unlimited Revisions</span>
                                 </li>
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
                                     <span>Priority Support</span>
                                 </li>
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
-                                    <span>60-Day Post-Launch Support</span>
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
+                                    <span>60-Day Support</span>
                                 </li>
-                                <li className="flex gap-3 text-sm">
-                                    <Check className="h-5 w-5 flex-none text-indigo-400" />
+                                <li className="flex gap-2 text-xs">
+                                    <Check className="h-4 w-4 flex-none text-indigo-400" />
                                     <span>4-6 Week Delivery</span>
                                 </li>
                             </ul>
                             <Link
                                 href="/contact"
-                                className="block w-full rounded-full bg-white/10 px-4 py-3 text-center text-sm font-semibold text-white hover:bg-white/20 transition-all"
+                                className="block w-full rounded-full bg-white/10 px-3 py-2 text-center text-xs font-semibold text-white hover:bg-white/20 transition-all"
                             >
                                 Get Started
                             </Link>
