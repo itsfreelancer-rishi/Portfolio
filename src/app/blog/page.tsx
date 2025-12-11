@@ -18,19 +18,27 @@ const blogPosts = [
         readTime: "8 min read"
     },
     {
-        title: "5 Mistakes Service Professionals Make on Their Websites",
-        slug: "website-mistakes-service-professionals",
-        excerpt: "Avoid these common pitfalls that are costing you high-paying clients. From poor messaging to confusing navigation, learn how to fix them.",
-        date: "Coming Soon",
-        category: "Web Design",
-        readTime: "6 min read"
+        title: "Freelance Web Developer Rates: Complete Pricing Guide 2026",
+        slug: "freelance-web-developer-rates",
+        excerpt: "Everything you need to know about freelance web developer rates, from hourly pricing to project-based fees and what factors affect the cost.",
+        date: "December 11, 2024",
+        category: "Pricing Guide",
+        readTime: "10 min read"
     },
     {
-        title: "Portfolio Website Cost: What to Expect When Hiring a Developer",
-        slug: "portfolio-website-cost-guide",
+        title: "Portfolio Website Cost: What You Should Expect to Pay",
+        slug: "portfolio-website-cost",
         excerpt: "Transparent breakdown of portfolio website pricing and what you should expect to pay for quality work. Understand the difference between budget, mid-range, and premium options.",
-        date: "Coming Soon",
+        date: "December 11, 2024",
         category: "Pricing",
+        readTime: "9 min read"
+    },
+    {
+        title: "How to Hire a Freelance Web Developer: Red Flags to Avoid",
+        slug: "hiring-red-flags",
+        excerpt: "Protect yourself from costly mistakes. Learn the warning signs that indicate a freelance web developer might not be the right choice for your project.",
+        date: "December 11, 2024",
+        category: "Warning Guide",
         readTime: "7 min read"
     },
 ];
@@ -59,7 +67,7 @@ export default function BlogPage() {
                         {blogPosts.map((post, index) => (
                             <Link
                                 key={post.slug}
-                                href={post.slug === "choose-freelance-web-developer" ? `/blog/${post.slug}` : "#"}
+                                href={`/blog/${post.slug}`}
                                 className="group"
                             >
                                 <article className="relative p-8 md:p-10 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300 overflow-hidden">
