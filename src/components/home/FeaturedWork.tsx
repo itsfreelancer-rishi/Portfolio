@@ -6,25 +6,31 @@ import { motion } from "framer-motion";
 
 const projects = [
     {
-        title: "Lumina Photography",
+        title: "MÉMOIRE WEDDINGS",
         category: "Wedding Photography",
         image: "/images/photographer.png",
-        slug: "lumina-photography",
+        slug: "memoire-weddings",
         description: "Minimizing bounce rate for high-end wedding inquiries.",
+        isExternal: true,
+        externalUrl: "https://wedding-photo-omega.vercel.app/"
     },
     {
-        title: "Barrett & Associates",
+        title: "LIVINGSTON & PARTNERS",
         category: "Legal Firm",
         image: "/images/lawyer.png",
-        slug: "barrett-legal",
+        slug: "livingston-partners",
         description: "Building authority and trust for corporate clients.",
+        isExternal: true,
+        externalUrl: "https://lawyer-gray.vercel.app/"
     },
     {
-        title: "FreshSpaces",
+        title: "Cleaning Service",
         category: "Cleaning Service",
         image: "/images/cleaning.png",
-        slug: "fresh-spaces",
+        slug: "cleaning-service",
         description: "Simplifying booking flow to increase conversion by 40%.",
+        isExternal: true,
+        externalUrl: "https://cleaning-lovat-tau.vercel.app/"
     },
 ];
 
@@ -65,7 +71,11 @@ export function FeaturedWork() {
                                     {project.category}
                                 </p>
                                 <h3 className="mt-2 text-xl font-bold text-foreground font-heading group-hover:text-white/80">
-                                    <Link href={`/work/${project.slug}`}>
+                                    <Link
+                                        href={project.isExternal ? project.externalUrl! : `/work/${project.slug}`}
+                                        target={project.isExternal ? "_blank" : undefined}
+                                        rel={project.isExternal ? "noopener noreferrer" : undefined}
+                                    >
                                         <span className="absolute inset-0" />
                                         {project.title}
                                     </Link>
