@@ -70,9 +70,6 @@ export default function ContactPage() {
                                 <Link href="https://www.instagram.com/itsfreelancer.rishi" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white hover:text-indigo-400 transition-colors">
                                     <Instagram className="h-4 w-4" /> Instagram
                                 </Link>
-                                <Link href="https://my-website-delta-inky.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white hover:text-indigo-400 transition-colors">
-                                    <Linkedin className="h-4 w-4" /> Photography
-                                </Link>
                             </div>
                         </div>
                     </div>
