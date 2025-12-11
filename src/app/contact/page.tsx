@@ -57,7 +57,7 @@ export default function ContactPage() {
                         </div>
                         <div>
                             <p className="text-sm font-medium text-muted-foreground">Email me at</p>
-                            <a href="mailto:itsfreelancer.rishi@gmail.com" className="text-lg font-bold text-white hover:underline">itsfreelancer.rishi@gmail.com</a>
+                            <a href="mailto:contact@rishifreelancer.me" className="text-lg font-bold text-white hover:underline">contact@rishifreelancer.me</a>
                         </div>
                     </div>
                     <div className="flex items-center gap-4">

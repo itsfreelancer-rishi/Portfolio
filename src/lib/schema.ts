@@ -14,7 +14,7 @@ export const organizationSchema = {
         "name": "Rishi Ramandwal Freelance"
     },
     "description": "Freelance web developer specializing in high-converting portfolio websites for US & UK service professionals.",
-    "email": "itsfreelancer.rishi@gmail.com",
+    "email": "contact@rishifreelancer.me",
     "knowsAbout": ["Web Development", "Web Design", "Portfolio Websites", "Conversion Optimization", "Next.js", "React"],
     "offers": {
         "@type": "Offer",
