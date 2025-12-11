@@ -209,12 +209,6 @@ export default function ServicesPage() {
                                     <span>2-Week Delivery</span>
                                 </li>
                             </ul>
-                            <Link
-                                href="/contact"
-                                className="block w-full rounded-full bg-white/10 px-3 py-2 text-center text-xs font-semibold text-white hover:bg-white/20 transition-all"
-                            >
-                                Get Started
-                            </Link>
                         </div>
 
                         {/* Professional Package (Recommended) */}
@@ -266,12 +260,6 @@ export default function ServicesPage() {
                                     <span>3-Week Delivery</span>
                                 </li>
                             </ul>
-                            <Link
-                                href="/contact"
-                                className="block w-full rounded-full bg-white px-3 py-2 text-center text-xs font-semibold text-black hover:bg-white/90 transition-all hover:scale-105"
-                            >
-                                Get Started
-                            </Link>
                         </div>
 
                         {/* Premium Package */}
@@ -320,12 +308,6 @@ export default function ServicesPage() {
                                     <span>4-6 Week Delivery</span>
                                 </li>
                             </ul>
-                            <Link
-                                href="/contact"
-                                className="block w-full rounded-full bg-white/10 px-3 py-2 text-center text-xs font-semibold text-white hover:bg-white/20 transition-all"
-                            >
-                                Get Started
-                            </Link>
                         </div>
                     </div>
 
