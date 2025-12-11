@@ -169,12 +169,6 @@ export default function ServicesPage() {
                                     <span>1-Week Delivery</span>
                                 </li>
                             </ul>
-                            <Link
-                                href="/contact"
-                                className="block w-full rounded-full bg-white/10 px-3 py-2 text-center text-xs font-semibold text-white hover:bg-white/20 transition-all"
-                            >
-                                Get Started
-                            </Link>
                         </div>
 
                         {/* Starter Package */}
