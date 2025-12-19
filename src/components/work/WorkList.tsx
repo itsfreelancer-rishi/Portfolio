@@ -8,6 +8,16 @@ import { ArrowUpRight } from "lucide-react";
 // In a real app, this would be fetched from a CMS or a data file
 const projects = [
     {
+        title: "Garcia's Taqueria",
+        category: "Restaurant Website",
+        image: "/images/restaurant.png",
+        slug: "garcias-taqueria",
+        description: "Modern restaurant website for Garcia's Taqueria in California, featuring online menu and location information.",
+        year: "2024",
+        isExternal: true,
+        externalUrl: "https://garcias-taqueria.vercel.app/"
+    },
+    {
         title: "Atelier Photography",
         category: "Wedding Photography Portfolio",
         image: "/images/photography-portfolio.png",
