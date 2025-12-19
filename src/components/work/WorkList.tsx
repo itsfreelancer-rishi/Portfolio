@@ -13,7 +13,7 @@ const projects = [
         image: "/images/restaurant.png",
         slug: "garcias-taqueria",
         description: "Modern restaurant website for Garcia's Taqueria in California, featuring online menu and location information.",
-        year: "2024",
+        year: "2025",
         isExternal: true,
         externalUrl: "https://garcias-taqueria.vercel.app/"
     },
@@ -23,7 +23,7 @@ const projects = [
         image: "/images/photography-portfolio.png",
         slug: "atelier-photography",
         description: "My personal photography portfolio showcasing timeless elegance in fine-art wedding photography.",
-        year: "2024",
+        year: "2025",
         isExternal: true,
         externalUrl: "https://my-website-delta-inky.vercel.app/"
     },
@@ -33,7 +33,7 @@ const projects = [
         image: "/images/photographer.png",
         slug: "memoire-weddings",
         description: "Minimizing bounce rate for high-end wedding inquiries.",
-        year: "2024",
+        year: "2025",
         isExternal: true,
         externalUrl: "https://wedding-photo-omega.vercel.app/"
     },
@@ -43,7 +43,7 @@ const projects = [
         image: "/images/lawyer.png",
         slug: "livingston-partners",
         description: "Building authority and trust for corporate clients.",
-        year: "2024",
+        year: "2025",
         isExternal: true,
         externalUrl: "https://lawyer-gray.vercel.app/"
     },
@@ -53,7 +53,7 @@ const projects = [
         image: "/images/cleaning.png",
         slug: "cleaning-service",
         description: "Simplifying booking flow to increase conversion by 40%.",
-        year: "2023",
+        year: "2025",
         isExternal: true,
         externalUrl: "https://cleaning-lovat-tau.vercel.app/"
     },
